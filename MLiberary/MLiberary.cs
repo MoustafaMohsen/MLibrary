@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Timers;
-using Microsoft.EntityFrameworkCore;
-using FridgeServer.Data;
-using FridgeServer.Models;
 
-namespace FridgeServer.Helpers
+namespace MLiberary
 {
     public abstract class M
     {
