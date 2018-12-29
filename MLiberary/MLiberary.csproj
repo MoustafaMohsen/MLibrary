@@ -2,6 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>2.2.0</Version>
+    <Authors>Moustafa Mohsen</Authors>
+    <Company>Moustafa Mohsen</Company>
+    <Copyright>MoustafaMohsen©2019</Copyright>
+    <PackageLicenseUrl>https://github.com/MoustafaMohsen/MLiberary/blob/master/MLiberary/assets/license.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/MoustafaMohsen/MLiberary.git</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/MoustafaMohsen/MLiberary/blob/master/MLiberary/assets/icon.ico</PackageIconUrl>
+    <RepositoryUrl>https://github.com/MoustafaMohsen/MLiberary.git</RepositoryUrl>
+    <PackageTags>General Helper Methods</PackageTags>
+    <Description>General Helper Methods</Description>
+    <FileVersion>2.2.0.0</FileVersion>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>

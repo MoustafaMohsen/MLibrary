@@ -6,7 +6,7 @@ using System.Timers;
 
 namespace MLiberary
 {
-    public abstract class M
+    public static class M
     {
         //===================Helper methods============//
         //Time Convertors Logic
@@ -26,6 +26,23 @@ namespace MLiberary
             var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
             return System.Convert.ToBase64String(plainTextBytes);
         }
+        public static double GetUtcInSecound()
+        {
+            return ToUnixTime(DateTime.UtcNow);
+        }
+
+        public static DateTime FromUnixTime(this long unixTime)
+        {
+            var epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            return epoch.AddSeconds(unixTime);
+        }
+
+        public static long ToUnixTime(this DateTime date)
+        {
+            var epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            return Convert.ToInt64((date - epoch).TotalSeconds);
+        }
+
         public static string Base64Decode(string base64EncodedData)
         {
             var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
@@ -71,6 +88,11 @@ namespace MLiberary
         public static string StringfyObject<T>(T Object)
         {
             return Newtonsoft.Json.JsonConvert.SerializeObject(Object);
+        }
+        public static T ObjectifyString<T>(string str)
+        {
+            var obj = Newtonsoft.Json.JsonConvert.DeserializeObject<T>(str);
+            return obj;
         }
         public static bool isNull<T>(T Object)
         {
