@@ -264,3 +264,6 @@ __pycache__/
 *.ps1
 nuget.exe
 *.nuspec
+*.pubxml
+*.pubxml.user
+*.csproj.user
