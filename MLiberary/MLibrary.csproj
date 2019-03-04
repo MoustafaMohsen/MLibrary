@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>3.1.2</Version>
+    <Authors>Moustafa Mohsen</Authors>
+    <Company>Moustafa Mohsen</Company>
+    <Copyright>MoustafaMohsen©2019</Copyright>
+    <PackageLicenseUrl>https://github.com/MoustafaMohsen/MLibrary/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/MoustafaMohsen/MLibrary.git</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/MoustafaMohsen/MLibrary/blob/master/icon.ico</PackageIconUrl>
+    <RepositoryUrl>https://github.com/MoustafaMohsen/MLibrary.git</RepositoryUrl>
+    <PackageTags>General Helper Methods Encryption Decryption</PackageTags>
+    <Description>M Library is a .NET Class library with static methods that is used a lot across different applications. 
+
+To put it simply, you can use M Library to Implement:
+- Encryption and Decryption Helper
+- DateTime Converter (e.g. Unix Time to DateTime and reverse)
+- Other functions like file Reader, Random string generator, Base64DecodeEncode, etc.
+
+Updated every time I think a new function could be helpful in general, feel free to contribute:
+https://github.com/MoustafaMohsen/MLibrary.git
+
+----------
+Contact me or for more projects visit https://moustafamohsen.com</Description>
+    <FileVersion>3.1.2.0</FileVersion>
+    <AssemblyVersion>3.1.2.0</AssemblyVersion>
+    <PackageReleaseNotes>Package info update</PackageReleaseNotes>
+    <PackageId>MLibrary</PackageId>
+    <AssemblyName>MLibrary</AssemblyName>
+    <RootNamespace>MLibrary</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>

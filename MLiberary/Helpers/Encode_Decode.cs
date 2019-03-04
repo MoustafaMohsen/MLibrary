@@ -4,7 +4,7 @@ using System.Text;
 using System.IO;
 using System.Security.Cryptography;
 
-namespace MLiberary.Helpers
+namespace MLibrary.Helpers
 {
 
     public static class Encode_Decode
